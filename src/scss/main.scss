@@ -3,7 +3,7 @@
 @import "base";
 @import "layout";
 @import "modules/example";
-@import "modules/burger";
+@import "modules/_burger.scss";
 
 .row + .row {
   margin-top: 16px;
@@ -15,4 +15,8 @@
   padding-bottom: 12px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+body {
+  background-color: black;
 }
