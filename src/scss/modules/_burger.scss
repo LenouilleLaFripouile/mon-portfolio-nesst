@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  transition: 0.5s;
   .burger-flex {
     display: flex;
     padding: 13px 21px;
@@ -25,6 +26,19 @@
   }
 }
 
-.burger-is-active {
-  transform: translateY(1000px);
+.burger-arrow {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.burger.closed {
+  transform: translateY(-50px);
+}
+
+.burger-arrow svg {
+  transition: 0.5s;
+}
+
+.burger-arrow.active svg {
+  transform: rotate(180deg);
 }
