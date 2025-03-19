@@ -4,6 +4,7 @@
 @import "layout";
 @import "modules/example";
 @import "modules/_burger.scss";
+@import "modules/_home.scss";
 
 .row + .row {
   margin-top: 16px;
@@ -19,4 +20,9 @@
 
 body {
   background-color: black;
+}
+
+@font-face {
+  font-family: "Humane";
+  src: url("../font/Humane-Bold.woff2") format("woff2");
 }
