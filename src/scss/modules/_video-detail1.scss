@@ -1,18 +1,18 @@
+.video-player {
+  display: flex;
+  width: 100%;
+  aspect-ratio: 16/9;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #d9d9d9;
+}
+
 .video-detail {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  .video-player {
-    display: flex;
-    width: 992px;
-    height: 547px;
-    padding: 249px 441px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    background: #d9d9d9;
-  }
 
   h1 {
     color: #fff;
@@ -47,10 +47,8 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 1.5;
     display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 10;
   }
   h3 {
     overflow: hidden;
@@ -61,7 +59,7 @@
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 2;
     flex-shrink: 0;
   }
   .video-detail-credits {

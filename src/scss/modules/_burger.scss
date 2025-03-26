@@ -5,7 +5,7 @@
   align-items: center;
   gap: 10px;
   transition: 0.5s;
-  z-index: 9999;
+
   .burger-flex {
     display: flex;
     padding: 13px 21px;
@@ -58,4 +58,5 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
 }
