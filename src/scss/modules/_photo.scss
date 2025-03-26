@@ -19,6 +19,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  transition: 0.5s;
 }
 .photo-card-1 {
   display: flex;
@@ -32,6 +33,7 @@
   border-radius: 15px;
   background: #d9d9d9;
   overflow: hidden;
+  transition: 0.3s;
 }
 .photo-card-2 {
   display: flex;
@@ -44,6 +46,7 @@
   border-radius: 15px;
   background: #d9d9d9;
   overflow: hidden;
+  transition: 0.3s;
 }
 .photo-card-3 {
   display: flex;
@@ -57,6 +60,7 @@
   border-radius: 15px;
   background: #d9d9d9;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 .photo-collection2 {
@@ -111,5 +115,26 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+.photo-card-1:hover {
+  transform: scale(1.05);
+  h1 {
+    color: black;
+  }
+}
+
+.photo-card-2:hover {
+  transform: scale(1.05);
+  h1 {
+    color: black;
+  }
+}
+
+.photo-card-3:hover {
+  transform: scale(1.05);
+  h1 {
+    color: black;
   }
 }
