@@ -1,4 +1,11 @@
 .home {
+  background-image: url(../img/portfolio-text.png);
+  background-size: 70%;
+  width: 100vw;
+  background-position: center;
+  height: calc(100vh - 115px);
+  background-repeat: no-repeat;
+
   .home-title {
     color: #fff;
     font-family: Humane;
@@ -17,4 +24,8 @@
   .home-title-left {
     text-align: left;
   }
+}
+.home-title-flex {
+  display: flex;
+  align-items: center;
 }
