@@ -30,6 +30,7 @@
 }
 
 .video-card {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -95,4 +96,8 @@
 .video-card.pop-animation {
   opacity: 1;
   transform: scale(1);
+}
+
+.video-card:hover {
+  transform: scale(1.05);
 }
