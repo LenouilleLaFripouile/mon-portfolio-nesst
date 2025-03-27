@@ -26,22 +26,3 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(card);
   });
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  var carousel = document.querySelector(".photo-collection1");
-  let scrollAmount = 0;
-  let scrollSpeed = 2; // Vitesse de déplacement
-  let maxScroll = carousel.scrollWidth / 2; // Scroll infini
-
-  function autoScroll() {
-    if (scrollAmount >= maxScroll) {
-      scrollAmount = 0; // Reset pour un effet infini
-    } else {
-      scrollAmount += scrollSpeed;
-    }
-    carousel.style.transform = `translateX(-${scrollAmount}px)`;
-    requestAnimationFrame(autoScroll);
-  }
-
-  autoScroll(); // Lance l’animation
-});
