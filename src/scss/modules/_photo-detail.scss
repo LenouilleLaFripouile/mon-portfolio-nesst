@@ -2,6 +2,8 @@
   width: 100%;
   aspect-ratio: 16/9;
   background: #d9d9d9;
+  position: relative;
+  overflow: hidden;
 }
 
 .photo-detail-flex {
@@ -13,6 +15,8 @@
   width: 100%;
   aspect-ratio: 4/5;
   background: #d9d9d9;
+  position: relative;
+  overflow: hidden;
 }
 
 .photo-detail-img-flex {
@@ -24,8 +28,8 @@
 .photo-detail-descriptiom {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 5%;
+  margin-top: 25px;
+
   h1 {
     color: #fff;
 
@@ -47,5 +51,50 @@
     font-weight: 400;
     line-height: normal;
     flex-shrink: 0;
+  }
+}
+
+.photo-detail-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  user-select: none; /* Empêche la sélection */
+  -webkit-user-select: none; /* Pour Safari */
+  -moz-user-select: none; /* Pour Firefox */
+  -ms-user-select: none; /* Pour Internet Explorer */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  transform: translateY(70px);
+  transition: 0.5s;
+  opacity: 10%;
+  h1 {
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
+
+.photo-detail-img:hover {
+  .photo-detail-hover {
+    transform: translateY(0px);
+    transition: 0.5s;
+    opacity: 70%;
+  }
+}
+.photo-detail-img1:hover {
+  .photo-detail-hover {
+    transform: translateY(0px);
+    transition: 0.5s;
+    opacity: 70%;
   }
 }

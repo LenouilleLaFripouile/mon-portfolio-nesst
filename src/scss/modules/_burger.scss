@@ -42,7 +42,7 @@
 }
 
 .burger.closed {
-  transform: translateY(-65px);
+  transform: translateY(-55px);
 }
 
 .burger-arrow svg {
@@ -59,4 +59,11 @@
   left: 0;
   right: 0;
   z-index: 9999;
+}
+
+a {
+  user-select: none; /* Empêche la sélection */
+  -webkit-user-select: none; /* Pour Safari */
+  -moz-user-select: none; /* Pour Firefox */
+  -ms-user-select: none; /* Pour Internet Explorer */
 }
