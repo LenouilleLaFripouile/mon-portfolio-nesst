@@ -63,3 +63,56 @@
     flex-shrink: 0;
   }
 }
+
+.home-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  h1 {
+    color: #fff;
+
+    /* text-title */
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h2 {
+    color: #fff;
+
+    /* text-description */
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.home-skills {
+  display: flex;
+  gap: 15px;
+  h1 {
+    color: #fff;
+
+    /* big text title */
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  h2 {
+    /* big text title */
+    font-family: Outfit;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(90deg, #066be8 0%, #f94bfd 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
