@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(card);
   });
 });
+
+window.addEventListener("scroll", () => {
+  const home = document.querySelector(".home");
+  if (window.scrollY > 100) {
+    home.classList.add("hidden");
+  } else {
+    home.classList.remove("hidden");
+  }
+});
