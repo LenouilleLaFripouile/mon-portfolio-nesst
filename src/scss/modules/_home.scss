@@ -93,6 +93,7 @@
 .home-skills {
   display: flex;
   gap: 15px;
+  margin-bottom: 25px;
   h1 {
     color: #fff;
 
@@ -122,9 +123,13 @@
     display: none;
   }
   .home-scroll {
-    bottom: 100;
+    bottom: 80;
   }
-  .home-info-query {
+  .home-info {
     margin-bottom: 25px;
+  }
+  .home-skills {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
