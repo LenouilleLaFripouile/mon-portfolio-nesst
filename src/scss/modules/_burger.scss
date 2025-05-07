@@ -30,7 +30,10 @@
       text-decoration: none;
     }
     a:hover {
-      color: aquamarine;
+      background: linear-gradient(90deg, #f94bfd 0.1%, #066be8 99.9%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       transform: scale(1.04);
     }
   }

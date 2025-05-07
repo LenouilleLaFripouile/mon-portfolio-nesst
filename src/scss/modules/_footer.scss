@@ -46,6 +46,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      transition: 0.3s;
     }
   }
   .footer-line-2 {
@@ -57,4 +58,14 @@
 
 .footer-bloc:hover {
   color: aquamarine;
+}
+
+.footer {
+  h2:hover {
+    background: linear-gradient(90deg, #f94bfd 0.1%, #066be8 99.9%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.04);
+  }
 }
