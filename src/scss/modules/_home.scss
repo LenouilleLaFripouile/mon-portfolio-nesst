@@ -116,3 +116,15 @@
     -webkit-text-fill-color: transparent;
   }
 }
+
+@media (max-width: 1000px) {
+  .home-title {
+    display: none;
+  }
+  .home-scroll {
+    bottom: 100;
+  }
+  .home-info-query {
+    margin-bottom: 25px;
+  }
+}
