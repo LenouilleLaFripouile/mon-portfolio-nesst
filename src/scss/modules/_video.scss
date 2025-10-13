@@ -29,10 +29,13 @@
   }
 }
 
+.video-comp {
+  position: relative;
+}
+
 .video-card {
   cursor: pointer;
   position: relative;
-  overflow: hidden;
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -46,6 +49,7 @@
   transform: scale(0.7);
   transition: 1s;
   margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
   .video-info {
     display: flex;
     flex-direction: column;
@@ -101,4 +105,16 @@
 
 .video-card:hover {
   transform: scale(1.05);
+}
+
+.video-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 30;
+  left: 30;
+  right: 0;
+  z-index: -10;
+  transform: scale(1.2);
 }

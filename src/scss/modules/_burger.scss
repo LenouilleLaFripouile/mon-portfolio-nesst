@@ -5,6 +5,14 @@
   align-items: center;
   gap: 10px;
   transition: 0.5s;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: -70;
+    bottom: 0;
+    z-index: -100000;
+  }
 
   .burger-flex {
     display: flex;
@@ -15,7 +23,8 @@
     gap: 20px;
     border-radius: 15px;
     border: 1px solid #fff;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
     h1,
     a {
       color: #fff;
