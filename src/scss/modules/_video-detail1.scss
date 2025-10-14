@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-
+  position: relative;
   h1 {
     color: #fff;
     font-family: Outfit;
@@ -52,7 +52,7 @@
     display: -webkit-box;
   }
   h3 {
-    overflow: hidden;
+    position: relative;
     color: #fff;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -81,4 +81,18 @@
 
 .video-detail-container {
   margin-bottom: 25px;
+}
+
+.video-detail-dec {
+  position: absolute;
+  bottom: 0;
+  right: -170;
+  rotate: 90deg;
+}
+
+.video-detail-dec-2 {
+  position: absolute;
+  top: 0;
+  right: -170;
+  rotate: -180deg;
 }

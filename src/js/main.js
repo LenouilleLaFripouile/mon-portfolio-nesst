@@ -1,39 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  var burger = document.querySelector(".burger");
-  var burgerArrow = document.querySelector(".burger-arrow");
+  // --- BURGER ---
+  const burger = document.querySelector(".burger");
+  const burgerArrow = document.querySelector(".burger-arrow");
 
-  burgerArrow.addEventListener("click", () => {
-    burger.classList.toggle("closed");
-    burgerArrow.classList.toggle("active");
-  });
-});
+  if (burger && burgerArrow) {
+    burgerArrow.addEventListener("click", () => {
+      burger.classList.toggle("closed");
+      burgerArrow.classList.toggle("active");
+    });
+  }
 
-document.addEventListener("DOMContentLoaded", function () {
-  var videoCards = document.querySelectorAll(".video-card");
+  // --- POP ANIMATION ---
+  const videoComps = document.querySelectorAll(".video-comp");
 
-  var observer = new IntersectionObserver(
+  const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("pop-animation");
+          const card = entry.target.querySelector(".video-card");
+          const glow = entry.target.querySelector(".video-glow");
+
+          if (card) card.classList.add("pop-animation");
+          if (glow) glow.classList.add("pop-animation");
         }
       });
     },
-    { threshold: 0.7 } // Déclenche l'animation à 70% de visibilité
+    { threshold: 0.7 } // Apparition à 70% visible
   );
 
-  videoCards.forEach((card) => {
-    observer.observe(card);
-  });
-});
-
-window.addEventListener("scroll", () => {
-  const home = document.querySelector(".home");
-  if (window.scrollY > 100) {
-    home.classList.add("hidden");
-  } else {
-    home.classList.remove("hidden");
-  }
+  videoComps.forEach((comp) => observer.observe(comp));
 });
 
 import { Application } from "@splinetool/runtime";
