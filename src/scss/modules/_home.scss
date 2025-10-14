@@ -163,3 +163,50 @@
   left: 0;
   right: 0;
 }
+
+.home-showreel-container {
+  margin-bottom: 15%;
+  margin-top: 15%;
+  position: relative;
+  .home-showreel {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1.85/1;
+    background-color: #fff;
+  }
+  .home-showreel-glow-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -15;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+    transform: scale(1.3);
+  }
+  .home-showreel-dec {
+    position: absolute;
+    width: 74px;
+    height: 72px;
+    flex-shrink: 0;
+    aspect-ratio: 37/36;
+  }
+  .home-showreel-dec-1 {
+    top: -100;
+  }
+  .home-showreel-dec-2 {
+    top: -100;
+    right: 0;
+    rotate: 90deg;
+  }
+  .home-showreel-dec-3 {
+    bottom: -100;
+    rotate: -90deg;
+  }
+  .home-showreel-dec-4 {
+    bottom: -100;
+    right: 0;
+    rotate: -180deg;
+  }
+}
