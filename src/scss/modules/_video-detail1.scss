@@ -88,6 +88,10 @@
   bottom: 0;
   right: -170;
   rotate: 90deg;
+  flex-shrink: 0;
+  aspect-ratio: 37/36;
+  width: 74px;
+  height: 72px;
 }
 
 .video-detail-dec-2 {
@@ -95,4 +99,8 @@
   top: 0;
   right: -170;
   rotate: -180deg;
+  flex-shrink: 0;
+  aspect-ratio: 37/36;
+  width: 74px;
+  height: 72px;
 }

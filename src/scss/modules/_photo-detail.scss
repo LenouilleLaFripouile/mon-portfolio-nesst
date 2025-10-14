@@ -32,7 +32,6 @@
 
   h1 {
     color: #fff;
-
     /* text-title */
     font-family: Outfit;
     font-size: 20px;
@@ -41,9 +40,8 @@
     line-height: normal;
   }
   h2 {
-    overflow: hidden;
     color: #fff;
-
+    position: relative;
     /* text-description */
     font-family: Outfit;
     font-size: 14px;
@@ -51,6 +49,26 @@
     font-weight: 400;
     line-height: normal;
     flex-shrink: 0;
+    .photo-detail-dec-2 {
+      position: absolute;
+      top: -40;
+      rotate: 180deg;
+      right: -175;
+      width: 74px;
+      height: 72px;
+      flex-shrink: 0;
+      aspect-ratio: 37/36;
+    }
+    .photo-detail-dec {
+      position: absolute;
+      width: 74px;
+      height: 72px;
+      flex-shrink: 0;
+      aspect-ratio: 37/36;
+      rotate: 90deg;
+      bottom: 0;
+      right: -175;
+    }
   }
 }
 
@@ -59,7 +77,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(102, 102, 102, 0.65) 100%
+  );
   user-select: none; /* Empêche la sélection */
   -webkit-user-select: none; /* Pour Safari */
   -moz-user-select: none; /* Pour Firefox */
@@ -71,6 +93,7 @@
   transform: translateY(70px);
   transition: 0.5s;
   opacity: 10%;
+
   h1 {
     overflow: hidden;
     color: #fff;
