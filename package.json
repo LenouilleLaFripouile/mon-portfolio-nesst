@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@splinetool/runtime": "^1.9.91",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "swiper": "^12.0.3"
   }
 }

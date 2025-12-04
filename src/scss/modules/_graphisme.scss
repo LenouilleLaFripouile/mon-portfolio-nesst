@@ -1,21 +1,104 @@
-.graphisme-carousel-1,
-.graphisme-carousel-2 {
-  width: 100vw;
+.gd-comp {
   position: relative;
-  svg {
-    position: absolute;
-    top: 40%;
-    right: 30;
-    z-index: 10;
+}
+
+.gd-card {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 15px;
+  border: 1px solid rgb(85, 85, 85);
+  align-items: flex-start;
+  gap: 25px;
+  align-self: stretch;
+  opacity: 1;
+  transition: 1s;
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  .gd-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    align-self: stretch;
+  }
+  .gd-player {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 15px;
+    background: #d9d9d9;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h1 {
+    color: #fff;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: stretch;
+  }
+  h2 {
+    overflow: hidden;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Outfit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    align-self: stretch;
   }
 }
 
-.graphisme-container {
-  position: relative;
-  .graphisme-shadow {
-    position: absolute;
-    height: 100%;
-    right: 0;
-    z-index: 10;
+.gd-card:hover {
+  transform: scale(1.05);
+  border: 1px solid #ffffff;
+}
+
+.gd-comp:hover {
+  .gd-glow {
+    filter: brightness(1000%);
+    transition: 0.5s ease;
   }
+}
+
+.gd-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 30;
+  left: 30;
+  right: 0;
+  z-index: -10;
+  filter: brightness(100%);
+  transition: filter 0.3s ease; /* transition courte et ciblée */
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+span.swiper-pagination-bullet-active {
+  background: white;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  color: white;
 }

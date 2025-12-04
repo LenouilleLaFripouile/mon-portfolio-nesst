@@ -41,7 +41,7 @@
   flex-direction: column;
   gap: 10px;
   border-radius: 15px;
-  border: 1px solid white;
+  border: 1px solid rgb(85, 85, 85);
   align-items: flex-start;
   gap: 25px;
   align-self: stretch;
@@ -105,12 +105,12 @@
 
 .video-card:hover {
   transform: scale(1.05);
-  border: 1px solid #f94bfd;
+  border: 1px solid #ffffff;
 }
 
 .video-comp:hover {
   .video-glow {
-    filter: brightness(1000%) sepia(100%) saturate(5000%) hue-rotate(270deg);
+    filter: brightness(1000%);
     transition: 0.5s ease;
   }
 }
