@@ -98,7 +98,49 @@ span.swiper-pagination-bullet-active {
   background: white;
 }
 
+span.swiper-pagination-bullet {
+  background: white;
+}
+
 div.swiper-button-next,
 div.swiper-button-prev {
   color: white;
+}
+
+.gd-sh {
+  position: absolute;
+  z-index: 10;
+  rotate: 180deg;
+  pointer-events: none;
+}
+
+.gd-sh-1 {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  right: 0;
+}
+
+h2 {
+  color: #fff;
+
+  /* text-title */
+  font-family: Outfit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.swiper-wrapper {
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.swiper-ui {
+  margin-top: -2%;
+  margin-bottom: 2%;
 }
