@@ -87,6 +87,7 @@
   left: 30;
   right: 0;
   z-index: -10;
+  pointer-events: none;
   filter: brightness(100%);
   transition: filter 0.3s ease; /* transition courte et ciblée */
   opacity: 1;
@@ -112,13 +113,16 @@ div.swiper-button-prev {
   z-index: 10;
   rotate: 180deg;
   pointer-events: none;
+  filter: blur(20px);
+  left: -25;
 }
 
 .gd-sh-1 {
   position: absolute;
   z-index: 10;
   pointer-events: none;
-  right: 0;
+  right: -25;
+  filter: blur(20px);
 }
 
 .gd-title {
