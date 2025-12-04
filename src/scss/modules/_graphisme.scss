@@ -144,3 +144,15 @@ div.swiper-button-prev {
   margin-top: -2%;
   margin-bottom: 2%;
 }
+
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    padding-left: 0%;
+    .gd-card {
+      transform: scale(0.9);
+    }
+    .gd-glow {
+      transform: scale(1);
+    }
+  }
+}
