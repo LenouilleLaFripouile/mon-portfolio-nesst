@@ -90,3 +90,9 @@ a {
 .burger-col {
   pointer-events: none;
 }
+
+@media (max-width: 768px) {
+  .burger {
+    transform: scale(1.1);
+  }
+}
