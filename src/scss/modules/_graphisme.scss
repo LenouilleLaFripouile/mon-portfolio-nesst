@@ -149,6 +149,16 @@ div.swiper-button-prev {
   margin-bottom: 2%;
 }
 
+.gd-dec {
+  position: absolute;
+  top: 30;
+  right: 40;
+  flex-shrink: 0;
+  aspect-ratio: 37/36;
+  width: 74px;
+  height: 72px;
+}
+
 @media (max-width: 768px) {
   .swiper-wrapper {
     padding-left: 0%;
@@ -158,5 +168,18 @@ div.swiper-button-prev {
     .gd-glow {
       transform: scale(1);
     }
+  }
+}
+
+@media (max-width: 1250px) {
+  .gd-dec {
+    top: 10;
+  }
+}
+
+@media (max-width: 991px) {
+  .gd-dec {
+    width: 50px;
+    height: 48px;
   }
 }
