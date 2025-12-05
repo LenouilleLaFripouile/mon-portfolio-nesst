@@ -250,3 +250,33 @@
     align-self: stretch;
   }
 }
+
+@media (max-width: 768px) {
+  .video-title {
+    h1 {
+      font-size: 100px;
+      margin-bottom: 10%;
+    }
+    span {
+      font-size: 100px;
+    }
+    .video-title-bottom {
+      top: 130px;
+    }
+  }
+  .video-dec {
+    width: 50px;
+    height: 48px;
+    left: -60px;
+  }
+  .video-dec-2 {
+    width: 50px;
+    height: 48px;
+    top: -60px;
+  }
+  .video-dec-3 {
+    width: 50px;
+    height: 48px;
+    right: -60px;
+  }
+}
