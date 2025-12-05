@@ -115,6 +115,7 @@
   aspect-ratio: 37/36;
   width: 74px;
   height: 72px;
+  z-index: 2;
 }
 .photo-glow {
   position: relative;
@@ -165,6 +166,28 @@
       transition: 0.5s;
     }
   }
+}
+.photo-sh {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  right: -25;
+  filter: blur(20px);
+  z-index: 1;
+  width: 200px;
+  height: 90%;
+}
+
+.photo-sh-1 {
+  position: absolute;
+  z-index: 10;
+  rotate: 180deg;
+  pointer-events: none;
+  filter: blur(20px);
+  left: -25;
+  z-index: 1;
+  width: 200px;
+  height: 90%;
 }
 
 @media (max-width: 991px) {
