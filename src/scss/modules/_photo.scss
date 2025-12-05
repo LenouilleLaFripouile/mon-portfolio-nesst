@@ -166,3 +166,24 @@
     }
   }
 }
+
+@media (max-width: 991px) {
+  .photo-dec {
+    width: 50px;
+    height: 48px;
+    top: 200;
+    right: 20;
+  }
+  .photo-collection1-container,
+  .photo-collection2-container {
+    .photo-cards {
+      width: 200px;
+      height: 200px;
+    }
+    .photo-card-2 {
+      width: 250px;
+      height: 200px;
+      padding: 100px 80px;
+    }
+  }
+}
