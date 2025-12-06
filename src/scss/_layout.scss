@@ -7,3 +7,21 @@
 .l-home {
   padding-top: 15px;
 }
+
+.l-stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -100;
+  pointer-events: none;
+  height: 100%;
+  background: radial-gradient(
+      circle at calc(var(--x) * 1px) calc(var(--y) * 1px),
+      hsl(0 0% 100% / 0.15),
+      transparent 150px
+    ),
+    hsl(0 0% 0%);
+  background-attachment: fixed;
+}
