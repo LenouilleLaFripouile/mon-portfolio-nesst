@@ -105,12 +105,12 @@
 
 .video-card:hover {
   transform: scale(1.05);
-  border: 1px solid #ffffff;
+  border: solid 1px white;
 }
 
 .video-comp:hover {
   .video-glow {
-    filter: brightness(1000%);
+    filter: brightness(1000%) blur(20px);
     transition: 0.5s ease;
   }
 }
