@@ -41,11 +41,12 @@
       pointer-events: auto;
     }
     a:hover {
-      background: linear-gradient(90deg, #f94bfd 0.1%, #066be8 99.9%);
+      background: linear-gradient(90deg, #ffffff 0.1%, #ffffff 99.9%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transform: scale(1.04);
+      text-decoration: underline;
     }
   }
 }
@@ -54,6 +55,7 @@
   cursor: pointer;
   transition: 0.5s;
   pointer-events: auto;
+  z-index: 100000;
 }
 
 .burger.closed {

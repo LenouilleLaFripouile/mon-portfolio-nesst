@@ -1,0 +1,64 @@
+.container-cards {
+  width: 90%;
+  margin: 0 auto;
+}
+
+:root {
+  --card-height: 87vh;
+  --cards: 4;
+  --card-margin: 4vw;
+  --card-top-padding: 1.5em;
+}
+
+#cards {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards)), var(--card-height);
+  gap: var(--card-margin);
+  padding-bottom: calc(var(--cards) * var(--card-top-padding));
+  margin-bottom: var(--card-margin);
+}
+
+#card1 {
+  --index: 1;
+}
+#card2 {
+  --index: 2;
+}
+#card3 {
+  --index: 3;
+}
+#card4 {
+  --index: 4;
+}
+
+.card {
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--index) * var(--card-top-padding));
+}
+
+#card1 .card-body {
+  background-color: transparent;
+}
+#card2 .card-body {
+  background-color: red;
+}
+#card3 .card-body {
+  background-color: red;
+}
+#card4 .card-body {
+  background-color: red;
+}
+
+.card-body {
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 15px;
+  height: var(--card-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
