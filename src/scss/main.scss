@@ -34,3 +34,10 @@ body {
   font-family: "Humane";
   src: url("../font/Humane-Bold.woff2") format("woff2");
 }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative; /* utile sur Safari iOS */
+}

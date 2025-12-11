@@ -104,3 +104,14 @@ a {
     transform: scale(0.9);
   }
 }
+
+@media (max-width: 375px) {
+  .burger {
+    transform: scale(0.85);
+  }
+}
+@media (max-width: 350px) {
+  .burger {
+    transform: scale(0.75);
+  }
+}
