@@ -26,8 +26,8 @@
 // }
 
 body {
-  background: linear-gradient(90deg, #000 0.01%, #161616 47.12%, #000 99.99%);
   overflow-x: hidden;
+  background: linear-gradient(90deg, #000 0.01%, #161616 47.12%, #000 99.99%);
 }
 
 @font-face {
@@ -35,9 +35,16 @@ body {
   src: url("../font/Humane-Bold.woff2") format("woff2");
 }
 
+// @media (max-width: 600px) {
+//   html,
+//   body {
+//     overflow-x: hidden;
+//     width: 100%;
+//     position: relative; /* utile sur Safari iOS */
+//   }
+// }
+
 html,
 body {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative; /* utile sur Safari iOS */
+  touch-action: pan-y;
 }

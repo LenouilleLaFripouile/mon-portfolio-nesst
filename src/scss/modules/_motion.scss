@@ -19,10 +19,14 @@
   padding-left: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--cards)), var(--card-height);
+  grid-template-rows: repeat(var(--cards), var(--card-height));
   gap: var(--card-margin);
   padding-bottom: calc(var(--cards) * var(--card-top-padding));
   margin-bottom: var(--card-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre horizontalement */
+  width: 100%;
 }
 
 #card1 {
@@ -193,4 +197,70 @@
   opacity: 1;
   transform: scale(1.1);
   transition: 1s;
+}
+
+@media (max-width: 992px) {
+  .motion-comp {
+    width: 90vw;
+  }
+  .motion-card .motion-player {
+    height: 15em;
+  }
+  .motion-comp {
+    padding-left: 10%;
+    padding-right: 10%;
+    h1 {
+      font-size: 18px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+  }
+  .container-cards {
+    margin-top: 0%;
+  }
+  .motion-glow {
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 768px) {
+  .motion-card .motion-player {
+    height: 15em;
+  }
+  .motion-comp {
+    padding-left: 7%;
+    padding-right: 7%;
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+  .container-cards {
+    margin-top: 0%;
+  }
+}
+
+@media (max-width: 480px) {
+  .motion-card .motion-player {
+    height: 15em;
+  }
+  .motion-comp {
+    padding-left: 5%;
+    padding-right: 5%;
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+  .container-cards {
+    margin-top: 0%;
+  }
+  .motion-glow {
+    transform: scale(1);
+  }
 }
