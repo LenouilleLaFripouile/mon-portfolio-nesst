@@ -279,3 +279,18 @@
     right: -60px;
   }
 }
+
+@media (max-width: 480px) {
+  .video-card .video-player {
+    height: 15em;
+  }
+  .video-card {
+    gap: 5px;
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+}

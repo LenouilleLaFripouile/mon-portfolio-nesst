@@ -78,7 +78,6 @@
 .motion-dec-3 {
   position: absolute;
   flex-shrink: 0;
-  aspect-ratio: 37/36;
   width: 74px;
   height: 72px;
 }
@@ -241,11 +240,18 @@
   .container-cards {
     margin-top: 0%;
   }
+  .motion-dec,
+  .motion-dec-1,
+  .motion-dec-2,
+  .motion-dec-3 {
+    width: 50px;
+    height: 48px;
+  }
 }
 
 @media (max-width: 480px) {
   .motion-card .motion-player {
-    height: 15em;
+    height: 12em;
   }
   .motion-comp {
     padding-left: 5%;
@@ -262,5 +268,12 @@
   }
   .motion-glow {
     transform: scale(1);
+  }
+  .motion-card {
+    padding: 15px;
+    gap: 15px;
+  }
+  .motion-card .motion-info {
+    gap: 10px;
   }
 }

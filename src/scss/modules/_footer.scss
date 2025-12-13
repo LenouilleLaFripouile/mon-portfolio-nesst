@@ -116,3 +116,15 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .footer {
+    transform: scale(1);
+    margin-top: 10%;
+    .footer-bloc {
+      h2 {
+        font-size: 12px;
+      }
+    }
+  }
+}

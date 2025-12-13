@@ -210,3 +210,10 @@
     }
   }
 }
+
+@media (max-width: 580px) {
+  .photo-sh,
+  .photo-sh-1 {
+    opacity: 0.3;
+  }
+}
