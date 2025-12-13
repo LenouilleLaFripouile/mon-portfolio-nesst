@@ -142,3 +142,30 @@
     transition: 0.5s;
   }
 }
+
+@media (max-width: 480px) {
+  .photo-detail-dec,
+  .photo-detail-dec-2 {
+    display: none;
+  }
+  .photo-detail-descriptiom {
+    h1 {
+      font-size: 16px;
+    }
+    h2 {
+      font-size: 12px;
+    }
+  }
+  .photo-detail-img:hover {
+    .photo-detail-hover {
+      transform: translateY(500px);
+      opacity: 0%;
+    }
+  }
+  .photo-detail-img1:hover {
+    .photo-detail-hover {
+      transform: translateY(500px);
+      opacity: 0%;
+    }
+  }
+}

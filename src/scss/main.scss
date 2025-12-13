@@ -11,19 +11,10 @@
 @import "modules/_footer.scss";
 @import "modules/_graphisme.scss";
 @import "modules/_motion.scss";
-// @import "swiper/swiper-bundle.scss";
 
 .row + .row {
   margin-top: 16px;
 }
-
-// .row > .col,
-// .row > [class^="col-"] {
-//   padding-top: 12px;
-//   padding-bottom: 12px;
-//   background-color: rgba(86, 61, 124, 0.15);
-//   border: 1px solid rgba(86, 61, 124, 0.2);
-// }
 
 body {
   overflow-x: hidden;
@@ -34,15 +25,6 @@ body {
   font-family: "Humane";
   src: url("../font/Humane-Bold.woff2") format("woff2");
 }
-
-// @media (max-width: 600px) {
-//   html,
-//   body {
-//     overflow-x: hidden;
-//     width: 100%;
-//     position: relative; /* utile sur Safari iOS */
-//   }
-// }
 
 html,
 body {

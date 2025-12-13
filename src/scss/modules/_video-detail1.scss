@@ -117,3 +117,33 @@
   width: 74px;
   height: 72px;
 }
+
+@media (max-width: 768px) {
+  .video-detail-dec,
+  .video-detail-dec-2 {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .video-player {
+    height: 12em;
+  }
+  .video-detail {
+    gap: 15px;
+    h1 {
+      font-size: 16px;
+    }
+    .video-detail-title h2 {
+      font-size: 13px;
+    }
+    p {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+  }
+  .video-detail .video-detail-bottom h1 {
+    margin-bottom: 15px;
+  }
+}
