@@ -216,4 +216,10 @@
   .photo-sh-1 {
     opacity: 0.3;
   }
+  .photo-glow:hover {
+    img {
+      filter: brightness(100%) blur(10px);
+      transition: 0.5s ease;
+    }
+  }
 }
